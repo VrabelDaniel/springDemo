@@ -17,7 +17,7 @@ public class PersonController {
         this.personService = personService;
     }
 
-    @GetMapping("find/{id}")
+    @GetMapping("/find/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Person findById(@PathVariable Long id) {
         return personService.findById(id);

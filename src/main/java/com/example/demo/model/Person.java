@@ -17,10 +17,10 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private Long id;
-    @JoinColumn(name = "Name")
+    @Column(name = "Name")
     private String name;
-    @JoinColumn(name = "Age")
+    @Column(name = "Age")
     private Integer age;
-    @JoinColumn(name = "Category")
+    @Column(name = "Category")
     private String category;
 }
