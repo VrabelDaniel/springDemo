@@ -1,10 +1,8 @@
 package com.example.demo.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import lombok.experimental.Accessors;
 
 @Entity
 @Table(name = "Person", schema = "DEMO")
@@ -12,6 +10,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
+@EqualsAndHashCode
+@Accessors(chain = true)
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
